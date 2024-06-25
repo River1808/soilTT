@@ -1,0 +1,826 @@
+.home-page .image-10 {
+  background: url('../assets/images/image_10.png') 150% / cover no-repeat;
+  position: absolute;
+  left: 0px;
+  top: 73px;
+  right: 0px;
+  height: 824px;
+}
+
+.home-page {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.home-page.image-10 {
+  width: 120px;
+  cursor: pointer;
+}
+
+.home-page .about-us-1 {
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 1000;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2c0a0a;
+  text-decoration: none;
+  bottom: 0px;
+  position: relative;
+}
+
+.home-page .about-us-1 ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.home-page .about-us-1 a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.home-page .about-us-1::after {
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #000000;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.home-page .about-us-1:hover::after {
+  width: 100%;
+}
+
+.home-page .frame-2 {
+  display: flex;
+  box-sizing: border-box;
+}
+
+
+.home-page .features {
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 1000;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2c0a0a;
+  text-decoration: none;
+  bottom: 0px;
+  position: relative;
+}
+
+.home-page .features ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.home-page .features a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.home-page .features::after {
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #000000;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.home-page .features:hover::after {
+  width: 100%;
+}
+
+.home-page .menu {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.home-page .dashboard {
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 1000;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2c0a0a;
+  text-decoration: none;
+  bottom: 0px;
+  position: relative;
+}
+
+.home-page .dashboard ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.home-page .dashboard a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.home-page .dashboard:after {
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #000000;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.home-page .dashboard:hover::after {
+  width: 100%;
+}
+
+.home-page .menu-1 {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.home-page .Sensors {
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 1000;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2c0a0a;
+  text-decoration: none;
+  bottom: 0px;
+  position: relative;
+}
+
+.home-page .Sensors ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.home-page .Sensors a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.home-page .Sensors::after {
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #000000;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.home-page .Sensors:hover::after {
+  width: 100%;
+}
+
+.home-page .menu-2 {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.home-page .header-menu {
+  position: absolute;
+  left: 320.9px;
+  top: 50%;
+  translate: 0 -50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 625.6px;
+  box-sizing: border-box;
+}
+
+.home-page .label {
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2c0a0a;
+  text-decoration: none;
+  bottom: 0px;
+  position: relative;
+}
+
+.home-page .label ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.home-page .label a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.home-page .button {
+  border-radius: 4px;
+  background: var(--brand-primary, #4CAF4F);
+  position: absolute;
+  right: 151px;
+  bottom: 18px;
+  display: flex;
+  padding: 11.5px 0;
+  width: 108px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  /* Centers horizontally */
+  align-items: center;
+}
+
+.home-page .remove-bg-ai-17184415864112 {
+  background: url('../assets/images/remove_bg_ai_17184415864112.png') 50% / cover no-repeat;
+  margin-right: 0.1px;
+  width: 75px;
+  height: 73px;
+}
+
+.home-page .plantville {
+  margin: 25px 0 24px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Simonetta';
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 0.6;
+  color: #4CAF4F;
+}
+
+.home-page .container-10 {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.home-page .image-16 {
+  background: url('../assets/images/image_17.png') 50% / cover no-repeat;
+  margin: 4px 0 3.2px 0;
+  width: 64px;
+  height: 65.8px;
+}
+
+.home-page .container-4 {
+  position: static;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1230px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+
+.home-page .header {
+  background: rgba(184, 216, 190, 0.7);
+  position: relative;
+  display: flex;
+  padding: 5px 30px 6px 20px;
+  width: 1280px;
+  box-sizing: border-box;
+}
+
+.home-page .background-placeholder {
+  opacity: 0.5;
+  background: url('../assets/images/background_placeholder.png') 50% / cover no-repeat;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+}
+
+.home-page .footer-1 {
+  position: relative;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.875;
+  color: #000000;
+}
+
+.home-page .about-us {
+  position: absolute;
+  left: 42.2px;
+  top: 38px;
+  overflow-wrap: break-word;
+  font-family: 'Jost';
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 1.278;
+  color: #000000;
+}
+
+.home-page .text-thing {
+  opacity: 0.7;
+  background: #FFFFFF;
+  position: relative;
+  padding: 128px 51px 10px 51px;
+  box-sizing: border-box;
+}
+
+.home-page .background {
+  position: relative;
+  margin: 0 24px 1px 121px;
+  padding: 398px 62px 51px 62px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.home-page .group-7 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+}
+
+.home-page .how-can-plantville-help-glad-you-asked {
+  margin: 0 96.6px 10.5px 96.6px;
+  align-self: flex-end;
+  overflow-wrap: break-word;
+  font-family: 'Quicksand';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 0.6;
+  color: #000000;
+}
+
+.how-can-plantville-help-glad-you-asked-sub2 {
+  font-family: 'Quicksand';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.333;
+  color: #102A0E;
+}
+
+.home-page .ellipse-6 {
+  border-radius: 175px;
+  background: #F7FBF9;
+  margin: 0 0 17px 52px;
+  width: 350px;
+  height: 350px;
+}
+
+.home-page .never-underwater-or-overwater-again {
+  margin: 0 0 36px 17px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Quicksand';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 0.6;
+  color: #102A0E;
+}
+
+.home-page .monitor-your-soil-moisture-and-notify-you-when-its-time-to-quench-your-plants-thirst {
+  overflow-wrap: break-word;
+  font-family: 'Quicksand';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #102A0E;
+}
+
+.home-page .container-3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.home-page .remove-bg-ai-17184459885721 {
+  background: url('../assets/images/remove_bg_ai_17184459885721.png') 50% / cover no-repeat;
+  transform: rotate(20deg);
+  position: absolute;
+  top: 44px;
+  right: 405.2px;
+  width: 390.8px;
+  height: 415px;
+}
+
+.home-page .ad {
+  position: relative;
+  margin-bottom: 97px;
+  display: flex;
+  padding: 45.5px 0 0 26px;
+  width: 1280px;
+  height: 686px;
+  box-sizing: border-box;
+}
+
+.home-page .what-our-plant-fam-has-to-say {
+  margin: 0 71.4px 63px 71.4px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Quicksand';
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 0.5;
+  color: #000000;
+}
+
+.home-page .container {
+  margin: 88px 14.1px 74px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Quicksand';
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 0.667;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.home-page .absolutely-lovin-it-my-plants-arent-dying-because-of-over-watering-anymore {
+  margin: 0 79.1px 15px 0;
+  display: inline-block;
+  align-self: center;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-family: 'Quicksand';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.417;
+  color: #000000;
+}
+
+.home-page .schneider-m {
+  overflow-wrap: break-word;
+  font-family: 'Quicksand';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.home-page .container {
+  border-radius: 20px;
+  background: #AFFFB2;
+  position: relative;
+  margin-right: 12.1px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 59px 43.1px 20px 0;
+  width: 830px;
+  box-sizing: border-box;
+}
+
+.home-page .container-1 {
+  margin: 88px 0 74px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Quicksand';
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 0.667;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.home-page .group-8 {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.home-page .review {
+  border-radius: 20px;
+  margin: 0 0 457px 26px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.home-page .footer {
+  position: relative;
+  overflow-wrap: break-word;
+  font-family: var(--body-medium-body-2-font-family, 'Inter');
+  font-weight: var(--body-medium-body-2-font-weight, 500);
+  font-size: var(--body-medium-body-2-font-size, 16px);
+  line-height: var(--body-medium-body-2-line-height, 1.5);
+  color: #000000;
+}
+
+.home-page .copyright {
+  margin: 6px 9px 0 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: var(--body-medium-body-2-font-family, 'Inter');
+  font-weight: var(--body-medium-body-2-font-weight, 500);
+  font-size: var(--body-medium-body-2-font-size, 16px);
+  line-height: var(--body-medium-body-2-line-height, 1.5);
+  color: #FFFFFF;
+}
+
+.home-page .group {
+  margin: 0 9.3px 0px 0;
+  width: 30px;
+  height: 30px;
+}
+
+.home-page .plantville-all-rights-reserved {
+  margin-top: 6px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: var(--body-medium-body-2-font-family, 'Inter');
+  font-weight: var(--body-medium-body-2-font-weight, 500);
+  font-size: var(--body-medium-body-2-font-size, 16px);
+  line-height: var(--body-medium-body-2-line-height, 1.5);
+  color: #FFFFFF;
+}
+
+.home-page .container-6 {
+  background: #107125;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  padding: 17px 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.home-page .footer-2 {
+  position: relative;
+  display: flex;
+  padding: 20px 46px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.home-page .container-2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.home-page .group-10 {
+  position: absolute;
+  top: 0px;
+  right: 24px;
+  width: 1280px;
+  height: 364px;
+}
+
+.home-page .rectangle-9 {
+  background: url('../assets/images/rectangle_9.png') 50% / cover no-repeat;
+  margin: 3px 125px 4px 0;
+  width: 208px;
+  height: 267px;
+}
+
+.home-page .join-our-growing-community {
+  margin-bottom: 34px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Quicksand';
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 0.667;
+  color: #102A0E;
+}
+
+.home-page .subscribe-for-more {
+  margin-right: 1.4px;
+  overflow-wrap: break-word;
+  font-family: 'Quicksand';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1;
+  color: #174421;
+}
+
+.home-page .group-12 {
+  margin: 0 45px 28px 29.9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.home-page .email {
+  overflow-wrap: break-word;
+  font-family: 'Quicksand';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.home-page .container-8 {
+  border-radius: 20px;
+  background: #42CC48;
+  position: relative;
+  padding: 15px 36.7px 19px 36.7px;
+  box-sizing: border-box;
+}
+
+.home-page .vector-2 {
+  width: 24px;
+  height: 19.2px;
+}
+
+.home-page .arrow-sm-right-svgrepo-com {
+  background: #EAFBED;
+  display: flex;
+  padding: 13.4px 12px;
+  width: 48px;
+  height: 46px;
+  box-sizing: border-box;
+}
+
+.home-page .group-4 {
+  border-radius: 35px;
+  background: #EAFBED;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  padding: 12px 13px 12px 9px;
+  width: 70px;
+  height: 70px;
+  box-sizing: border-box;
+}
+
+.home-page .group-5 {
+  position: relative;
+  padding: 8px 11px 4px 0;
+  box-sizing: border-box;
+}
+
+.home-page .container-5 {
+  margin: 10px 130px 84px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.home-page .rectangle-10 {
+  background: url('../assets/images/rectangle_10.png') 50% / cover no-repeat;
+  width: 200px;
+  height: 274px;
+}
+
+.home-page .container-1 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.home-page .screenshot-20240616102822-removebg-preview-1 {
+  background: url('../assets/images/screenshot_20240616102822_removebg_preview_1.png') 50% / cover no-repeat;
+  position: absolute;
+  left: 0px;
+  bottom: 9px;
+  width: 241px;
+  height: 302px;
+}
+
+.home-page .screenshot-20240616102957-removebg-preview-1 {
+  background: url('../assets/images/screenshot_20240616102957_removebg_preview_1.png') 50% / cover no-repeat;
+  position: absolute;
+  top: 45px;
+  right: 0px;
+  width: 226px;
+  height: 117px;
+}
+
+.home-page .community {
+  position: absolute;
+  left: 50%;
+  bottom: 55px;
+  translate: -50% 0;
+  display: flex;
+  padding: 94px 59px 0 137px;
+  box-sizing: border-box;
+}
+
+.home-page .how-can-help-page {
+  position: relative;
+  display: flex;
+  padding: 0 24px 0 121px;
+  box-sizing: border-box;
+}
+
+.home-page .container-9 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 1425px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+
+.home-page .keep-your-plants {
+  margin-bottom: 64.5px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Radio Canada';
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 0.48;
+  color: #174421;
+}
+
+.home-page .with-our-sensor-and-dashboard {
+  align-self: flex-end;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 0.75;
+  color: #123321;
+}
+
+.home-page .container-11 {
+  margin-bottom: 17px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.home-page .fresh-safe {
+  text-align: center;
+  overflow-wrap: break-word;
+  font-family: 'Radio Canada';
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 0.48;
+  color: #123321;
+}
+
+.fresh-safe-sub9 {
+  font-family: 'Radio Canada';
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.333;
+  color: #1C9E57;
+}
+
+.fresh-safe {
+  font-family: 'Radio Canada';
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.333;
+  color: #2E1D1D;
+}
+
+.home-page .container-7 {
+  background: rgba(217, 217, 217, 0.3);
+  position: absolute;
+  left: 0px;
+  top: 80px;
+  right: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 67.7px 0 87.4px;
+  height: 817px;
+  box-sizing: border-box;
+}
+
+.home-page .rectangle-50 {
+  background: linear-gradient(0deg, #8A8C8C, #1A1A1A);
+  position: absolute;
+  left: 0px;
+  top: 893px;
+  right: 0px;
+  height: 102px;
+}
+
+.home-page {
+  background: #FFFFFF;
+  display: flex;
+  width: 1280px;
+  box-sizing: border-box;
+}

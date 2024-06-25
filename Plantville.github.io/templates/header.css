@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav_btn {
+  position: absolute;
+  right: 100px;
+  /* Điều chỉnh để phù hợp với khoảng cách mong muốn */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav.menu {
+  display: flex;
+  /* Đẩy các mục còn lại về bên phải */
+}
+
+body {
+  position: relative;
+  background-color: #fff;
+}
+
+.logo .logo-image {
+  width: 100px;
+  /* Set the width you want */
+  height: 50px;
+  /* Set the height you want */
+  object-fit: contain;
+  border-radius: 50%;
+  /* This ensures the image isn't distorted */
+}
+
+.logo2 .logo3 {
+  width: 100px;
+  /* Set the width you want */
+  height: 50px;
+  /* Set the height you want */
+  object-fit: contain;
+  border-radius: 50%;
+  /* This ensures the image isn't distorted */
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 12%;
+}
+
+button {
+  cursor: pointer;
+  background: var(--brand-primary, #4CAF4F);
+  color: #fff;
+  font-family: 'Inter';
+  font-size: 20px;
+  font-weight: 500;
+  transition: .3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 11.5px;
+  width: 108px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button i {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  border: 2px;
+}
+
+nav {
+  background: rgba(184, 216, 190, 0.7);
+  position: relative;
+  display: flex;
+  padding: 5px 30px 6px 20px;
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.logo {
+  width: 0px;
+  height: 50px;
+  gap: 1000px;
+}
+
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+ul li a {
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 8px;
+  transition: .3s;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 0.8;
+  color: #2c0a0a;
+  text-decoration: none;
+  bottom: 0px;
+  position: relative;
+}
+
+ul li a::after {
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #000000;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+ul li a:hover::after {
+  width: 100%;
+}
+
+ul li a:hover {
+  color: #2c0a0a;
+}
+
+nav.nav_btn button {
+  width: 150px;
+}
+
+
+.button {
+  cursor: pointer;
+  display: flex;
+  background: #4CAF4F;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  transition: .3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.navbar .plantville {
+  margin: 25px 25px 25px 25px;
+  font-family: 'Simonetta';
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 0.6;
+  color: #4CAF4F;
+}
+
+.background {
+  background: url('../assets/images/image_10.png') 0% / cover no-repeat;
+  position: absolute;
+  left: 0px;
+  top: 73px;
+  right: 0px;
+  height: 619px;
+}
+
+.container-7 {
+  background: rgba(217, 217, 217, 0.3);
+  position: absolute;
+  left: 0px;
+  top: 73px;
+  right: 0px;
+  height: 619px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 67.7px 0 87.4px;
+  box-sizing: border-box;
+}
+
+.keep-your-plants {
+  position: absolute;
+  width: 791px;
+  height: 128px;
+  left: -65px;
+  top: 388px;
+
+  font-family: 'Radio Canada';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 24px;
+  /* or 48% */
+  align-items: center;
+  text-align: center;
+
+  color: #174421;
+  margin-bottom: 64.5px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  color: #174421;
+}
+
+.with-our-sensor-and-dashboard {
+  /* with our sensor and dashboard */
+
+  position: absolute;
+  width: 577px;
+  height: 65px;
+  left: 121px;
+  top: 478px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 24px;
+  /* or 75% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #123321;
+
+
+  align-self: flex-end;
+  overflow-wrap: break-word;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 0.75;
+  color: #123321;
+}
+
+.fresh-safe1 {
+  position: absolute;
+  height: 187px;
+  left: 920px;
+  top: 357px;
+  font-family: 'Radio Canada';
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.333;
+  color: #2E1D1D;
+}
+
+.fresh-safe-sub9 {
+  position: absolute;
+  height: 187px;
+  left: 870px;
+  top: 297px;
+  font-family: 'Radio Canada';
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.333;
+  color: #1C9E57;
+}
+
+.fresh-safe2 {
+  position: absolute;
+  width: 478px;
+  height: 187px;
+  left: 700px;
+  top: 437px;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-family: 'Radio Canada';
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 0.48;
+  color: #123321;
+}

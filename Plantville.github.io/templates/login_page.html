@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantville</title>
+    <link rel="stylesheet" href="login_page.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/login_page.css') }}">
+</head>
+<body>
+    <div class="welcome-to-plantville">
+        <img src="{{ url_for('static', filename='images/welcometoplantville.png')}}" alt="WELCOME to Plantville">
+    </div>
+    <div class="wrapper">
+        <form action="/" method="POST">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png')}}" alt="Plantville Logo">
+                <h1>Plantville</h1>
+            </div>
+            <div class="input-box">
+                <input name="username" placeholder="Username" required>
+                <box-icon type='solid' name='user'><i class="bx bx-user"></i></box-icon>
+            </div>
+            <div class="input-box">
+                <input type="password" name="password" placeholder="Password" required>
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn" value="login">Login</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="register_page.html">Create an account!</a></p>
+            </div>
+        </form>
+        {% if msg %}
+        <p>{{ msg }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

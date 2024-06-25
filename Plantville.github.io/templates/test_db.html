@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Test</title>
+</head>
+<body>
+    <h1>Database Test</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for account in accounts %}
+            <tr>
+                <td>{{ account.id }}</td>
+                <td>{{ account.username }}</td>
+                <td>{{ account.email }}</td>
+                <td>{{ account.password }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

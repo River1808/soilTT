@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --background: #fff;
+    --navbar-width: 95px;
+    --navbar-width-min: 80px;
+    --navbar-dark-primary: rgba(23, 68, 33, 0.43);
+}
+
+/* Rectangle 3 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav_btn {
+    position: absolute;
+    right: 100px;
+    /* Điều chỉnh để phù hợp với khoảng cách mong muốn */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav.menu {
+    display: flex;
+    /* Đẩy các mục còn lại về bên phải */
+}
+
+body {
+    position: relative;
+    background-color: #fff;
+}
+
+.logo .logo-image {
+    width: 100px;
+    /* Set the width you want */
+    height: 50px;
+    /* Set the height you want */
+    object-fit: contain;
+    border-radius: 50%;
+    /* This ensures the image isn't distorted */
+}
+
+.logo2 .logo3 {
+    width: 100px;
+    /* Set the width you want */
+    height: 50px;
+    /* Set the height you want */
+    object-fit: contain;
+    border-radius: 50%;
+    /* This ensures the image isn't distorted */
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 12%;
+}
+
+button {
+    cursor: pointer;
+    background: var(--brand-primary, #4CAF4F);
+    color: #fff;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 500;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 11.5px;
+    width: 108px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button i {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    border: 2px;
+}
+
+nav {
+    background: rgba(184, 216, 190, 0.7);
+    position: relative;
+    display: flex;
+    padding: 5px 30px 6px 20px;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.logo {
+    width: 0px;
+    height: 50px;
+    gap: 1000px;
+}
+
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+ul li a {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 8px;
+    transition: .3s;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 0.8;
+    color: #2c0a0a;
+    text-decoration: none;
+    bottom: 0px;
+    position: relative;
+}
+
+ul li a::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+ul li a:hover::after {
+    width: 100%;
+}
+
+ul li a:hover {
+    color: #2c0a0a;
+}
+
+nav.nav_btn button {
+    width: 150px;
+}
+
+
+.button {
+    cursor: pointer;
+    display: flex;
+    background: #4CAF4F;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.navbar .plantville {
+    margin: 25px 25px 25px 25px;
+    font-family: 'Simonetta';
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 0.6;
+    color: #4CAF4F;
+}
+
+
+#nav-toggle:checked~#nav-header {
+    width: calc(var(--navbar-width-min) - 16px);
+}
+
+#nav-toggle:checked~#nav-content,
+#nav-toggle:checked~#nav-footer {
+    width: var(--navbar-width-min);
+}
+
+#nav-toggle:checked~#nav-header #nav-title {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.1s;
+}
+
+
+
+
+
+
+
+#nav-bar {
+    position: absolute;
+
+    height: 612px;
+    display: flex;
+    flex-direction: column;
+    color: var(--navbar-light-primary);
+    font-family: 'Inter';
+    overflow: hidden;
+    user-select: none;
+}
+
+#nav-header hr {
+    position: absolute;
+    bottom: 0;
+}
+
+
+#nav-content {
+    margin: -16px 0;
+    padding: 16px 0;
+    position: relative;
+    flex: 1;
+    width: var(--navbar-width);
+    background: var(--navbar-dark-primary);
+    direction: rtl;
+    overflow-x: hidden;
+    transition: width 0.2s;
+}
+
+
+#nav-content-highlight {
+    position: absolute;
+    left: 1px;
+    top: -70px;
+    width: calc(100% - 16px);
+    height: 54px;
+    background: #174421;
+    background-attachment: fixed;
+    transition: top 0.2s;
+}
+
+.nav-button {
+    position: relative;
+    margin-left: 16px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    direction: ltr;
+    cursor: pointer;
+    z-index: 1;
+    transition: color 0.2s;
+}
+
+.nav-button span {
+    transition: opacity 1s;
+}
+
+.nav-button .fas {
+    transition: min-width 0.2s;
+}
+
+.nav-button:nth-of-type(1):hover {
+    color: #fff;
+}
+
+.nav-button:nth-of-type(1):hover~#nav-content-highlight {
+    top: 16px;
+    width: 95px;
+}
+
+.nav-button:nth-of-type(2):hover {
+    color: #fff;
+}
+
+.nav-button:nth-of-type(2):hover~#nav-content-highlight {
+    top: 70px;
+    width: 95px;
+}
+
+.nav-button:nth-of-type(3):hover {
+    color: #fff;
+}
+
+.nav-button:nth-of-type(3):hover~#nav-content-highlight {
+    top: 124px;
+    width: 95px;
+}
+
+.nav-button:nth-of-type(4):hover {
+    color: #fff;
+}
+
+.nav-button:nth-of-type(4):hover~#nav-content-highlight {
+    top: 178px;
+    width: 95px;
+}
+
+.nav-button:nth-of-type(5):hover {
+    color: #fff;
+}
+
+.nav-button:nth-of-type(5):hover~#nav-content-highlight {
+    top: 232px;
+    width: 95px;
+}
+
+.nav-button:nth-of-type(6):hover {
+    color: #fff;
+}
+
+.nav-button:nth-of-type(6):hover~#nav-content-highlight {
+    top: 286px;
+    width: 95px;
+}
+
+.nav-button:nth-of-type(7):hover~#nav-content-highlight {
+    top: 340px;
+    width: 95px;
+}
+
+.nav-button:nth-of-type(8):hover {
+    color: #fff;
+}
+
+.nav-button:nth-of-type(8):hover~#nav-content-highlight {
+    top: 394px;
+    width: 95px;
+}
+
+#nav-bar .fas {
+    min-width: 3rem;
+    text-align: center;
+}
+
+.copyright {
+    /* Copyright */
+
+    position: absolute;
+    width: 76px;
+    height: 1px;
+    left: 455px;
+    top: 19px;
+
+    /* Body/Medium/Body 2 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-align: right;
+
+    color: #FFFFFF;
+
+}
+
+.container-6 {
+    background: #107125;
+
+    /* Rectangle 7 */
+
+    position: sticky;
+    width: 1296px;
+    height: 64px;
+    left: 0px;
+    top: 630px;
+
+    background: #107125;
+
+}
+
+.group {
+    /* Group */
+
+    position: absolute;
+    left: 41.41%;
+    right: 56.25%;
+    top: 11.64%;
+    width: 50px;
+    bottom: 0.85%;
+
+
+}
+
+.plantville-all-rights-reserved {
+    /* 2024, Plantville. All rights reserved */
+
+    position: absolute;
+    width: 266px;
+    height: 24px;
+    left: 599px;
+    top: 19px;
+
+    /* Body/Medium/Body 2 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-align: right;
+
+    color: #FFFFFF;
+
+
+}

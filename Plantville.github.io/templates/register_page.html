@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantville - Join Us</title>
+    <link rel="stylesheet" href="register_page.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/register_page.css') }}">
+</head>
+<body>
+    <body>
+
+        <div class="welcome-to-plantville">
+            <img src="{{ url_for('static', filename='images/joinus.png')}}" alt="join us now">
+        </div>
+            <div class="wrapper">
+                <form action="\login_page">
+                <div class="logo">
+                    <img src="{{ url_for('static', filename='images/logo.png')}}" alt="Plantville Logo">
+                    <h1>Plantville</h1>
+                </div>
+                    <div class="input-box">
+                        <input type="text" id="username" placeholder="Username" required>
+                        <box-icon type='solid' name='user'><i class="bx bx-user"></i></box-icon>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" id="email" placeholder="Email" required>
+                        <box-icon type='solid' name='user'><i class='bx bxl-gmail'></i>
+                    </div>
+    
+                    <div class="input-box">
+                        <input type="password" id="password" placeholder="New Password" required>
+                        <i class="bx bx-lock-alt"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Enter again" required>
+                        <i class="bx bx-lock-alt"></i>
+                    </div>
+                    <button type="submit" class="btn">Sign up</button>
+                    <div class="register-link">
+                        <p>Already have an account!
+                        <a href="login_page.html"> Sign in </a></p>
+                    </div>
+                </form>
+            </div>    
+    
+    
+    </body>
+</body>
+</html>
