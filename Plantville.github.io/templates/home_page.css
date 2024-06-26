@@ -1,0 +1,801 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav_btn {
+    position: absolute;
+    right: 100px;
+    /* Điều chỉnh để phù hợp với khoảng cách mong muốn */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav.menu {
+    display: flex;
+    /* Đẩy các mục còn lại về bên phải */
+}
+
+body {
+    position: relative;
+    background-color: #fff;
+}
+
+.logo .logo-image {
+    width: 100px;
+    /* Set the width you want */
+    height: 50px;
+    /* Set the height you want */
+    object-fit: contain;
+    border-radius: 50%;
+    /* This ensures the image isn't distorted */
+}
+
+.logo2 .logo3 {
+    width: 100px;
+    /* Set the width you want */
+    height: 50px;
+    /* Set the height you want */
+    object-fit: contain;
+    border-radius: 50%;
+    /* This ensures the image isn't distorted */
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 12%;
+}
+
+button {
+    cursor: pointer;
+    background: var(--brand-primary, #4CAF4F);
+    color: #fff;
+    font-family: 'Inter';
+    font-size: 21px;
+    font-weight: 500;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 9.5px;
+    width: 110px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button i {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    border: 2px;
+}
+
+nav {
+    background: rgba(184, 216, 190, 0.7);
+    position: relative;
+    display: flex;
+    padding: 5px 30px 6px 20px;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.logo {
+    width: 1px;
+    height: 50px;
+}
+
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+}
+
+ul li a {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 8px;
+    transition: .3s;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 0.8;
+    color: #2c0a0a;
+    text-decoration: none;
+    bottom: 0px;
+    position: relative;
+}
+
+ul li a::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+ul li a:hover::after {
+    width: 100%;
+}
+
+ul li a:hover {
+    color: #2c0a0a;
+}
+
+.button {
+    cursor: pointer;
+    display: flex;
+    background: #4CAF4F;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.navbar .plantville {
+    margin: 25px 25px 25px 25px;
+    font-family: 'Simonetta';
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 0.6;
+    color: #4CAF4F;
+}
+
+.background1 {
+    background: url('../assets/images/image_10.png') center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 73px;
+    right: 0;
+    bottom: 0;
+    height: 619px;
+    width: 100%;
+}
+
+.container-1 {
+    background: rgba(217, 217, 217, 0.3);
+    position: absolute;
+    left: 0px;
+    top: 73px;
+    right: 0px;
+    height: 619px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 67.7px 0 87.4px;
+    box-sizing: border-box;
+}
+
+.keep-your-plants {
+    position: absolute;
+    width: 791px;
+    height: 128px;
+    left: -65px;
+    top: 388px;
+
+    font-family: 'Radio Canada';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 24px;
+    /* or 48% */
+    align-items: center;
+    text-align: center;
+
+    color: #174421;
+    margin-bottom: 64.5px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    color: #174421;
+}
+
+.with-our-sensor-and-dashboard {
+    /* with our sensor and dashboard */
+
+    position: absolute;
+    width: 577px;
+    height: 65px;
+    left: 121px;
+    top: 478px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 24px;
+    /* or 75% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #123321;
+
+
+    align-self: flex-end;
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 0.75;
+    color: #123321;
+}
+
+.fresh-safe1 {
+    position: absolute;
+    height: 187px;
+    left: 920px;
+    top: 357px;
+    font-family: 'Radio Canada';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.333;
+    color: #2E1D1D;
+}
+
+.fresh-safe-sub9 {
+    position: absolute;
+    height: 187px;
+    left: 870px;
+    top: 297px;
+    font-family: 'Radio Canada';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.333;
+    color: #1C9E57;
+}
+
+.fresh-safe2 {
+    position: absolute;
+    width: 478px;
+    height: 187px;
+    left: 700px;
+    top: 437px;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-family: 'Radio Canada';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 0.48;
+    color: #123321;
+}
+
+.background2 {
+    background: url('../assets/images/background_placeholder.png') 0% / cover no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 721px;
+    right: 0px;
+    height: 824px;
+    opacity: 0.5;
+    width: 100%;
+
+}
+
+.container-2 {
+    background: linear-gradient(0deg, #8A8C8C 0%, #1A1A1A 100%);
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 102px;
+    left: 0px;
+    top: 619px;
+    display: flex;
+}
+
+.footer-1 {
+    position: relative;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.875;
+    color: #000000;
+}
+
+.about-us {
+    position: absolute;
+    left: 42.2px;
+    top: 38px;
+    overflow-wrap: break-word;
+    font-family: 'Jost';
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 1.278;
+    color: #000000;
+    /* About Us */
+}
+
+.text-thing {
+    /* Text Thing */
+
+    position: absolute;
+    width: 536px;
+    height: 438px;
+    left: -200px;
+    top: 1053px;
+    opacity: 0.7;
+    background: #FFFFFF;
+    position: relative;
+    padding: 128px 51px 10px 51px;
+    box-sizing: border-box;
+}
+
+.group-7 {
+    /* Group 7 */
+
+    position: absolute;
+    width: 100%;
+    height: 101vh;
+    left: 0px;
+    top: 1540px;
+}
+
+.how-can-plantville-help-glad-you-asked {
+    /* How can Plantville help? Glad you asked! */
+
+    position: absolute;
+    width: 888px;
+    height: 50px;
+    left: 270px;
+    top: 1580px;
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 24px;
+    /* or 60% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #102A0E;
+}
+
+.never-underwater-or-overwater-again {
+    /* Never underwater or overwater again! */
+
+    position: absolute;
+    width: 755px;
+    height: 24px;
+    left: 284px;
+    top: 1999px;
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 24px;
+    /* identical to box height, or 60% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #102A0E;
+
+
+}
+
+.monitor-your-soil-moisture-and-notify-you-when-its-time-to-quench-your-plants-thirst {
+    /* Monitor your soil moisture and notify you when it’s time to quench your plant’s thirst */
+
+    position: absolute;
+    width: 984px;
+    height: 24px;
+    left: 175px;
+    top: 2059px;
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height, or 100% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #102A0E;
+
+
+}
+
+.ellipse-6 {
+    /* Ellipse 6 */
+
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    left: 504px;
+    top: 1632px;
+    border-radius: 175px;
+    background: #F7FBF9;
+
+}
+
+.remove-bg-ai-17184459885721 {
+    background: url('../assets/images/remove_bg_ai_17184459885721.png') 50% / cover no-repeat;
+    transform: rotate(20deg);
+    /* Remove-bg.ai_1718445988572 1 */
+
+    position: absolute;
+    width: 294.15px;
+    height: 334.53px;
+    left: 540px;
+    top: 1627px;
+}
+
+.what-our-plant-fam-has-to-say {
+    /* What our Plant Fam has to say */
+
+    position: absolute;
+    top: 2446px;
+    width: 100%;
+    left: 24vw;
+    margin: 0 auto;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 24px;
+    /* identical to box height, or 50% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #000000;
+
+
+}
+
+.container-120 {
+
+    /* < */
+
+    position: absolute;
+    width: 43px;
+    height: 44px;
+    left: 194px;
+    top: 2630px;
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 24px;
+    /* or 67% */
+
+    color: rgba(0, 0, 0, 0.6);
+
+
+}
+
+.container-121 {
+
+    /* < */
+
+    position: absolute;
+    width: 43px;
+    height: 44px;
+    left: 1112px;
+    top: 2630px;
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 24px;
+    /* or 67% */
+
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.container_rectangle {
+    /* Rectangle 13 */
+
+    position: absolute;
+    width: 830px;
+    height: 186px;
+    left: 251px;
+    top: 2553px;
+
+    background: #AFFFB2;
+    border-radius: 20px;
+
+}
+
+.absolutely-lovin-it-my-plants-arent-dying-because-of-over-watering-anymore {
+    /* Absolutely lovin’ it! My plants aren’t dying because of over-watering anymore. */
+
+    position: absolute;
+    width: 90%;
+    left: 9vw;
+    top: 4vw;
+    margin: 0 auto;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2vw;
+    line-height: 1.4;
+    /* or 142% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+
+}
+
+.schneider-m {
+    /* Schneider M. */
+
+    position: absolute;
+    width: 145px;
+    height: 24px;
+    left: 624px;
+    top: 150px;
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height, or 100% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.65);
+
+
+}
+
+.group-10 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 427vh;
+}
+
+.rectangle-9 {
+    background: url('../assets/images/rectangle_9.png') center / cover no-repeat;
+    position: absolute;
+    width: 16vw;
+    height: 45vh;
+    left: vw;
+    bottom: 1vh;
+    max-width: 208px;
+    max-height: 300px;
+}
+
+.rectangle-10 {
+    background: url('../assets/images/rectangle_10.png') center / cover no-repeat;
+    position: absolute;
+    width: 15vw;
+    height: 45vh;
+    right: 7vw;
+    bottom: 0vh;
+    max-width: 200px;
+    max-height: 350px;
+}
+
+.screenshot-20240616102822-removebg-preview-1 {
+    background: url('../assets/images/screenshot_20240616102822_removebg_preview_1.png') center / contain no-repeat;
+    position: absolute;
+    width: 18vw;
+    height: 3300vh;
+    left: -110px;
+    bottom: -2vh;
+    max-width: 241px;
+    max-height: 350px;
+}
+
+.screenshot-20240616102957-removebg-preview-1 {
+    background: url('../assets/images/screenshot_20240616102957_removebg_preview_1.png') center / contain no-repeat;
+    position: absolute;
+    width: 20vw;
+    right: 0px;
+    height: 100vh;
+    bottom: 25vh;
+    max-height: 170px;
+}
+
+.join-our-growing-community {
+    /* Join our growing community */
+
+    position: absolute;
+    width: 492px;
+    height: 24px;
+    left: 418px;
+    top: 3141px;
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 24px;
+    /* identical to box height, or 67% */
+    text-align: right;
+
+    color: #102A0E;
+
+
+}
+
+.subscribe-for-more {
+    /* Subscribe for more ! */
+
+    position: absolute;
+    width: 227px;
+    height: 24px;
+    left: 560px;
+    top: 3199px;
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height, or 100% */
+    text-align: right;
+
+    color: #174421;
+
+
+}
+
+.group-4 {
+    /* Group 4 */
+
+    position: absolute;
+    left: 845px;
+    top: 3251px;
+}
+
+.group-4 {
+    border-radius: 35px;
+    background: #EAFBED;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    padding: 12px 13px 12px 9px;
+    width: 70px;
+    height: 70px;
+    box-sizing: border-box;
+}
+
+.arrow-sm-right-svgrepo-com {
+    background: #EAFBED;
+    display: flex;
+    padding: 12.4px 12px;
+    width: 50px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.vector-2 {
+    width: 100px;
+    height: 25px;
+}
+
+.copyright {
+    /* Copyright */
+
+    position: absolute;
+    width: 76px;
+    height: 24px;
+    left: 455px;
+    top: 19px;
+
+    /* Body/Medium/Body 2 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-align: right;
+
+    color: #FFFFFF;
+
+}
+
+.container-6 {
+    background: #107125;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 619px;
+    width: 100vw;
+    /* Rectangle 7 */
+    height: 64px;
+    left: 0px;
+    top: 3396px;
+
+    background: #107125;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 64px;
+    z-index: 1000;
+}
+
+.group {
+    /* Group */
+
+    position: absolute;
+    left: 41.99%;
+    right: 58.25%;
+    top: 15.64%;
+    width: 40px;
+    bottom: 0.85%;
+
+
+}
+
+.plantville-all-rights-reserved {
+    /* 2024, Plantville. All rights reserved */
+
+    position: absolute;
+    width: 266px;
+    height: 24px;
+    left: 599px;
+    top: 19px;
+
+    /* Body/Medium/Body 2 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-align: right;
+
+    color: #FFFFFF;
+
+
+}
