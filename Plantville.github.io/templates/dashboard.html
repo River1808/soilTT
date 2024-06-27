@@ -60,6 +60,78 @@
                 2024, Plantville. All rights reserved
             </div>
         </div>
+        <div class="chartBox">
+            <canvas id="myChart"></canvas>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"
+            integrity="sha512-vc58qvvBdrDR4etbxMdlTt4GBQk1qjvyORR2nrsPsFPyrs+/u5c3+1Ct6upOgdZoIl7eq6k3a1UPDSNAQi/32A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+        <script>
+            const chartData = 'Plant 1-val.csv'
+
+            d3.csv(chartData).then(function (datapoints) {
+                console.log(datapoints)
+                const times = [];
+                const value = [];
+
+                for (let i = 0; i < datapoints.length; i++) {
+                    // Split the timestamp and extract the time
+                    let fullTimestamp = datapoints[i].time;
+                    let timePart = fullTimestamp.split('T')[1].split('.')[0];
+                    times.push(timePart);
+                    value.push(parseFloat(datapoints[i].value));
+                }
+
+                // setup
+                const data = {
+                    labels: times,
+                    datasets: [{
+                        label: 'Values',
+                        data: value,
+                        borderWidth: 1,
+                        backgroundColor: 'rgba(255,26,104,0.2)',
+                        borderColor: 'rgba(255,26,104,1)',
+                        tension: 0.4,
+                        pointRadius: 0
+                    }],
+                };
+
+                // config
+                const config = {
+                    type: 'line',
+                    data: data,
+                    options: {
+                        scales: {
+                            x: {
+                                title: {
+                                    display: false,
+                                    text: 'Time (HH:MM:SS)'
+                                }
+                            },
+                            y: {
+                                beginAtZero: true,
+                                title: {
+                                    display: false,
+                                    text: 'Value'
+                                }
+                            }
+                        }
+                    }
+                };
+
+                // render init block
+                const myChart = new Chart(
+                    document.getElementById('myChart'),
+                    config
+                );
+
+                console.log('Times:', times);
+                console.log('Values:', value);
+            }).catch(function (error) {
+                console.log('Error loading the CSV file:', error);
+            });
+        </script>
 </body>
 
 </html>

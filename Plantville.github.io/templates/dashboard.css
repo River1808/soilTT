@@ -423,3 +423,16 @@ nav.nav_btn button {
 
 
 }
+
+
+.chartBox {
+    width: 60%;
+    position: absolute;
+    height: 65%;
+    left: 39vw;
+    top: 10vw;
+
+    border-radius: 20px;
+    border: solid 3px rgb(34, 57, 73);
+    background: white;
+}
