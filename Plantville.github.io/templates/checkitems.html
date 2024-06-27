@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Simonetta:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.bootstrap5.css" />
+    <link rel="stylesheet" href="./checkitems.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/checkitems.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/Plantville.github.io/static/images/logo.png" alt="" class="logo-image"> <!-- Insert Logo image-->
+        </div>
+        <div class="plantville">
+            Plantville
+        </div>
+        <div class="image-16">
+        </div>
+        <ul class="menu">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Sensors</a></li>
+        </ul>
+        <div class="nav_btn">
+            <button onclick="window.location.href='login_page.html'"> Log out </button>
+        </div>
+        <div class="bars">
+            <i class="ri-menu-line"></i>
+        </div>
+        <div class="logo2">
+            <img src="/Plantville.github.io/static/images/logo.png" alt="" class="logo3"> <!-- Insert Logo image-->
+        </div>
+    </nav>
+    <div class="background">
+    </div>
+    
+    <div class="wrapper">
+        <div class="container mt-3">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addSensorModal" style="background-color: rgb(113, 223, 150); border-color: rgb(113, 223, 150);">
+                <small>Add Sensor</small>
+            </button>
+        </div>
+
+        <!-- Add Sensor Modal -->
+        <div class="modal fade" id="addSensorModal" tabindex="-1" aria-labelledby="addSensorModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addSensorModalLabel">Add Sensor</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="sensorInput" class="form-label">Sensor Name</label>
+                            <input type="text" class="form-control" id="sensorInput" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="descriptionInput" class="form-label">Description</label>
+                            <input type="text" class="form-control" id="descriptionInput" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="statusInput" class="form-label">Status</label>
+                            <select class="form-select" id="statusInput" onchange="updateBorder()">
+                                <option value="Active">Active</option>
+                                <option value="Inactive">Inactive</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="font-size: 81%;">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="addSensor()" style="font-size: 81%;">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Edit Sensor Modal -->
+        <div class="modal fade" id="editSensorModal" tabindex="-1" aria-labelledby="editSensorModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editSensorModalLabel">Edit Sensor</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="editSensorInput" class="form-label">Sensor Name</label>
+                            <input type="text" class="form-control" id="editSensorInput" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="editDescriptionInput" class="form-label">Description</label>
+                            <input type="text" class="form-control" id="editDescriptionInput" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="editStatusInput" class="form-label">Status</label>
+                            <select class="form-select" id="editStatusInput" onchange="updateBorder()">
+                                <option value="Active">Active</option>
+                                <option value="Inactive">Inactive</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="font-size: 81%;">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="updateSensor()" style="font-size: 81%;">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-responsive table-responsive-data2">
+            <table id="example" class="table table-data2 table-striped mt-3" style="width: 100%">
+                <thead>
+                    <tr>
+                        <th>Sensor</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>Actions</th> <!-- New column for Actions -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Static sensor row -->
+                    <tr id="staticSensorRow">
+                        <td>Sensor 1</td>
+                        <td>Demo</td>
+                        <td><span class="status-badge active">Active</span></td>
+                        <td><a href="dashboard.html" target="_blank" class="btn btn-primary">Connected</a></td>
+                    </tr>
+                    <!-- Table body will be populated dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.bootstrap5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="/Plantville.github.io/static/Javascript/checkitems.js"></script>
+    <script src="storagejs.js"></script>
+</body>
+</html>
